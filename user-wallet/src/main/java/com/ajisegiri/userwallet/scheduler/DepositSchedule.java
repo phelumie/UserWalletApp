@@ -66,8 +66,7 @@ public class DepositSchedule {
     private static final String SUBJECT = "Insufficient Funds: Transaction ID %s";
 
 
-    //        @Scheduled(cron = "0 0 12  * * ?")
-    @Scheduled(fixedRate = 10000L)
+            @Scheduled(cron = "0 0 12  * * ?")
     public void ScheduledDeposit() {
         List<ScheduledDeposit> activeScheduledDeposits = scheduledDepositRepository.findActiveScheduledDeposits();
 
