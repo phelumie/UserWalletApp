@@ -51,7 +51,7 @@ docker run -d --name my_rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.9.21-man
 
 - User Management Service: [http://localhost:9090/swagger-ui/index.html#/](http://localhost:9090/swagger-ui/index.html#/)
 
-- User Wallet Service: [http://localhost:9090/swagger-ui/index.html#/](http://localhost:9090/swagger-ui/index.html#/)
+- User Wallet Service: [http://localhost:8080/swagger-ui/index.html#/](http://localhost:9090/swagger-ui/index.html#/)
 
 9. Access the application by navigating to the appropriate URL in your web browser.
 
