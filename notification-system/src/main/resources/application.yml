@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: notification-system
+  security.oauth2.resourceserver.jwt:
+    jwk-set-uri: "https://www.googleapis.com/service_accounts/v1/jwk/securetoken%40system.gserviceaccount.com"
+    issuer-uri: "https://securetoken.google.com/springboot-firebaseauth"
+  rabbitmq:
+    listener:
+      simple:
+        retry:
+          enabled: true
+          initial-interval: 2s
+          max-attempts: 5
+          max-interval: 5s
+          multiplier: 1
